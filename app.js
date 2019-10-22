@@ -6,7 +6,7 @@ var handler = function(request, response) {
     console.log("Received request from " + request.connection.remoteAddress); 
     response.statusCode = 200;
     response.setHeader('Content-Type','application/json');
-    response.end("{\"test\":\"ttttt\"}");
+    response.end("{\"key\":\"value\"}");
 };
 
 var www = http.createServer(handler); 
