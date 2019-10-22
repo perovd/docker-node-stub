@@ -1,9 +1,8 @@
 const http = require('http');
-const os = require('os');
-console.log("Kubia server starting...");
+console.log("Stub server starting...");
 
 var handler = function(request, response) {
-    console.log("Received request from " + request.connection.remoteAddress); 
+    console.log("Received request from " + request.method); 
     response.statusCode = 200;
     response.setHeader('Content-Type','application/json');
     response.end("{\"key\":\"value\"}");
